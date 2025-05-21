@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: install libelf
-      run: apt-get install libelf-dev
+      run: sudo apt-get install -y libelf-dev
     - name: allyesconfig
       run: make allyesconfig
     - name: make
