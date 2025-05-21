@@ -15,3 +15,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: allyesconfig
       run: make allyesconfig
+    - name: make
+      run: make V=99
